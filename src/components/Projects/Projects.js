@@ -2,11 +2,12 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Footer from "../Footer";
 
 const Projects = () => {
   return (
     <div className="text-white flex flex-col items-center justify-center h-screen snap-start">
-      <h1 className="text-3xl">My Projects</h1>
+      <h1 className="text-3xl my-6  ">My Projects</h1>
       <Carousel
         emulateTouch={true}
         swipeable={true}
@@ -34,6 +35,7 @@ const Projects = () => {
           demoLink="https://grim.vercel.app/"
         />
       </Carousel>
+      <Footer />
     </div>
   );
 };

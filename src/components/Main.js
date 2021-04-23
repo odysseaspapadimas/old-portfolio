@@ -1,10 +1,25 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 const Main = () => {
   return (
     <main className="flex flex-col items-center justify-center snap-start">
       <div className="flex flex-col justify-center items-center h-screen text-white mx-2">
-        <h1 className="font-semibold text-2xl">Odysseas Papadimas</h1>
+        {
+          // <h1 id="typer" className="font-semibold text-2xl">Hi, I'm Odysseas Papadimas</h1>
+        }
+        <Typewriter
+        options={{
+          cursor: ''
+        }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString(
+                '<span style="font-size: 2rem">Hi, Im Odysseas Papadimas.</span>'
+              )
+              .start();
+          }}
+        />
         <p>I'm a Front-end Developer based in Patras, Greece.</p>
 
         <div className="links flex m-4">
@@ -27,12 +42,42 @@ const Main = () => {
         </div>
         <p className="text-lg">My skills:</p>
         <div className="flex">
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" className="mx-1" alt="html5" width="50px"/>
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" className="mx-1" alt="ccs3" width="50px"/>
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" className="mx-1" alt="javascript" width="50px"/>
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" className="mx-1" alt="react" width="50px"/>
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg" className="mx-1" alt="firebase" width="50px"/>
-          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" className="mx-1" alt="python" width="50px"/>
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+            className="mx-1"
+            alt="html5"
+            width="50px"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+            className="mx-1"
+            alt="ccs3"
+            width="50px"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            className="mx-1"
+            alt="javascript"
+            width="50px"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+            className="mx-1"
+            alt="react"
+            width="50px"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg"
+            className="mx-1"
+            alt="firebase"
+            width="50px"
+          />
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            className="mx-1"
+            alt="python"
+            width="50px"
+          />
         </div>
       </div>
     </main>
