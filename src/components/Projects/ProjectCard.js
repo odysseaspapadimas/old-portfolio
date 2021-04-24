@@ -9,8 +9,7 @@ const ProjectCard = ({ title, description, image, gitLink, demoLink }) => {
             <button className="text-white pr-4">
               <a
                 href={gitLink}
-                className="py-2 px-4 rounded-sm"
-                style={{ backgroundColor: "#365ed9" }}
+                className="py-2 px-4 rounded-sm bg-secondary hover:bg-secondaryHover duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -20,8 +19,7 @@ const ProjectCard = ({ title, description, image, gitLink, demoLink }) => {
             <button className="text-white">
               <a
                 href={demoLink}
-                className="py-2 px-4 rounded-sm"
-                style={{ backgroundColor: "#365ed9" }}
+                className="py-2 px-4 rounded-sm bg-secondary hover:bg-secondaryHover duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
               >

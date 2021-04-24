@@ -41,7 +41,7 @@ const Main = () => {
           className="links flex m-4"
         >
           <a
-            className="mx-2"
+            className="mx-2 hover:text-secondary duration-200"
             href="https://github.com/odysseaspapadimas"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const Main = () => {
             <FaGithub size="40" />
           </a>
           <a
-            className="mx-2"
+            className="mx-2 hover:text-secondary duration-200"
             href="https://www.linkedin.com/in/odysseas-vasileios-papadimas-8ab824148/"
             target="_blank"
             rel="noopener noreferrer"
@@ -104,13 +104,13 @@ const Main = () => {
           </div>
           <button
             onClick={() =>
-              scroll.scrollMore(500, {
-                duration: 1200,
+              scroll.scrollToBottom({
+                duration: 0,
                 delay: 0,
                 smooth: 'easeInOutQuart'
               })
             }
-            className="py-2 px-4 bg-white text-black font-semibold mt-8 rounded-sm"
+            className="py-2 px-4 font-semibold mt-8 rounded-sm bg-secondary text-white  hover:bg-secondaryHover duration-200"
           >
             My projects
           </button>
