@@ -1,13 +1,11 @@
-import grimImg from "../../images/grim.png";
-
-const ProjectCard = ({ title, description, gitLink, demoLink }) => {
+const ProjectCard = ({ title, description, image, gitLink, demoLink }) => {
   return (
       <div className="flex flex-col h-full pb-10 justify-between items-stretch">
-        <img src={grimImg} alt="" className="" />
-        <div className="justify-self-stretch">
+        <img src={image} alt="" className="" />
+        <div className="justify-self-stretch my-4 flex flex-col justify-between items-stretch h-full">
           <h1 className="text-2xl">{title}</h1>
-          <p className="mb-4">{description}</p>
-          <div>
+          <p className="mb-4 mx-auto max-w-2xl">{description}</p>
+          <div >
             <button className="text-white pr-4">
               <a
                 href={gitLink}

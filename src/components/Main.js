@@ -10,12 +10,13 @@ const Main = () => {
         }
         <Typewriter
         options={{
-          cursor: ''
+          cursor: '',
+          delay: 80
         }}
           onInit={(typewriter) => {
             typewriter
               .typeString(
-                '<span style="font-size: 2rem">Hi, Im Odysseas Papadimas.</span>'
+                '<span style="font-size: 1.6rem">Hi, I\'m Odysseas Papadimas.</span>'
               )
               .start();
           }}

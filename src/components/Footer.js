@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-white w-full m-auto flex flex-col items-center">
+    <footer className="absolute bottom-4 text-white w-full m-auto flex flex-col items-center">
       <p>
         Made with{" "}
         <span role="img" aria-label="heart">
