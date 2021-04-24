@@ -22,14 +22,14 @@ const Projects = () => {
       >
         <ProjectCard
           title="Social media app"
-          description="A social media application built with React and Firebase based on Instagram. You can signup/login, upload posts send messages and like/comment other people's photos."
+          description="A full-stack social media application built with React and Firebase based on Instagram. You can signup/login, upload posts, follow, send messages and like/comment other people's photos."
           image={grimImg}
           gitLink="https://github.com/odysseaspapadimas/grim-social-media"
           demoLink="https://grim.vercel.app/"
         />
         <ProjectCard
           title="Weather app"
-          description="A simple responsive React.js weather application using the OpenWeatherMap API with an asynchronous axios call to check the current weather anywhere you want."
+          description="A simple responsive React weather application using the OpenWeatherMap API with an asynchronous axios call to check the current weather anywhere you want."
           image={weatherImg}
           gitLink="https://github.com/odysseaspapadimas/weather/"
           demoLink="https://odysseaspapadimas.github.io/weather/"
@@ -43,7 +43,7 @@ const Projects = () => {
         />
         <ProjectCard
           title="Chess clock"
-          description="A fully functional chess clock, optimized for mobile, with customizable time limit and increment on each turn, a pause function and full-screen capabilities."
+          description="A fully functional chess clock, optimized for mobile, with customizable time limit and increment on each turn, a pause function and full-screen capabilities, all in Vanilla JS."
           image={chessClockImg}
           gitLink="https://github.com/odysseaspapadimas/chess-clock"
           demoLink="https://odysseaspapadimas.github.io/chess-clock/"
