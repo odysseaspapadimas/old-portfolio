@@ -7,6 +7,7 @@ import grimImg from "../../images/grim.png";
 import weatherImg from "../../images/weather.jpg";
 import chessClockImg from "../../images/chess-clock.png";
 import animeImg from "../../images/anime.png";
+import whalesImg from "../../images/whales.png";
 
 const Projects = () => {
   return (
@@ -40,6 +41,13 @@ const Projects = () => {
           image={animeImg}
           gitLink="https://github.com/odysseaspapadimas/anime-by-image"
           demoLink="https://odysseaspapadimas.github.io/anime-by-image/"
+        />
+        <ProjectCard
+          title="Whale Sightings"
+          description="An application used to track whale sightings by species using a whale sighting API and the Google Cloud Maps JavaScript API"
+          image={whalesImg}
+          gitLink="https://github.com/odysseaspapadimas/whale-sightings"
+          demoLink="https://whale-sightings.vercel.app/"
         />
         <ProjectCard
           title="Chess clock"
